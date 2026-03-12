@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
+    <title>Notícias - Partido Missão Tocantins</title>
+
+    <meta name="description" content="Acompanhe as últimas notícias e atualizações do Partido Missão no Tocantins.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'missao-yellow': '#fcbd27', 'missao-dark': '#111111' },
+                    fontFamily: { 'afacad': ['Afacad', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-padding-top: 90px; }
+        body { background-color: #111111; color: #ffffff; }
+    </style>
+</head>
+<body class="font-afacad antialiased">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-32 pb-20 px-6">
+        <section class="container mx-auto">
+            
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight leading-none mb-8">
+                <span class="text-missao-yellow">Notícias</span>
+            </h1>
+
+            <div class="mb-12">
+                <input type="text" id="searchInput" placeholder="Buscar notícias..." 
+                    class="w-full px-6 py-3 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-missao-yellow transition-all">
+            </div>
+
+            <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="noticias/noticia1.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
+                    <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-48 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-black opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M5 13.5h14m-7-11v20m7-17h2a2 2 0 012 2v14a2 2 0 01-2 2H2a2 2 0 01-2-2V5a2 2 0 012-2h2"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Partido anuncia novo programa de capacitação política</h2>
+                        <p class="text-gray-400 text-sm mb-4">Iniciativa visa preparar novos líderes para as próximas eleições no Tocantins.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">10 de março de 2026</span>
+                            <span class="text-missao-yellow text-sm font-medium">Leia mais →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="noticias/noticia2.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
+                    <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-48 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-black opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17 20h5v-2a3 3 0 00-5.856-1.488M15 6a3 3 0 11-6 0 3 3 0 016 0zM16 12a4 4 0 01-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Encontro com candidatos da campanha 2026</h2>
+                        <p class="text-gray-400 text-sm mb-4">Missão reúne candidatos para discutir estratégias e compromissos com o estado.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">8 de março de 2026</span>
+                            <span class="text-missao-yellow text-sm font-medium">Leia mais →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="noticias/noticia3.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
+                    <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-48 flex items-center justify-center">
+                        <svg class="w-16 h-16 text-black opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Índice de aprovação do Missão cresce no Tocantins</h2>
+                        <p class="text-gray-400 text-sm mb-4">Pesquisa aponta aumento de 15% na aprovação da legenda entre eleitores tocantinenses.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs text-gray-500">5 de março de 2026</span>
+                            <span class="text-missao-yellow text-sm font-medium">Leia mais →</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar Header
+        fetch('layout/header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o header');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (hamburger && mobileMenu) {
+                    hamburger.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+
+                    const mobileLinks = mobileMenu.querySelectorAll('a');
+                    mobileLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+
+        // Carregar Footer
+        fetch('layout/footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o footer');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erro:', error));
+
+        // Busca de notícias
+        const searchInput = document.getElementById('searchInput');
+        const newsContainer = document.getElementById('news-container');
+        const newsCards = newsContainer.querySelectorAll('a');
+
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            
+            newsCards.forEach(card => {
+                const title = card.querySelector('h2').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(term) || description.includes(term)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

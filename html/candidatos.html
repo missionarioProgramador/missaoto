@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
+    <title>Candidatos - Partido Missão Tocantins</title>
+
+    <meta name="description" content="Conheça nossos candidatos a Governador, Deputado Federal e Deputado Estadual. Transformação política responsável para o Tocantins.">
+    <meta name="keywords" content="candidatos tocantins, deputado federal, deputado estadual, governador tocantins, eleições 2026">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'missao-yellow': '#fcbd27', 'missao-dark': '#111111' },
+                    fontFamily: { 'afacad': ['Afacad', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-padding-top: 90px; }
+        body { background-color: #111111; color: #ffffff; }
+        .candidate-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .candidate-card:hover {
+            transform: translateY(-8px);
+            border-color: #fcbd27;
+        }
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+        .filter-btn.active {
+            background-color: #fcbd27;
+            color: #111111;
+        }
+        .candidate-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-afacad antialiased">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-40 pb-24 px-6">
+        <section class="container mx-auto max-w-6xl">
+            
+            <!-- Header Section -->
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+                    Nossos <span class="text-missao-yellow">Candidatos</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Conheça os candidatos que representam a missão de transformar o Tocantins
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-16">
+                <button class="filter-btn active px-6 py-2 rounded-full font-bold border border-missao-yellow text-missao-yellow" data-filter="all">
+                    Todos os Candidatos
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full font-bold border border-gray-700 text-gray-400 hover:border-missao-yellow hover:text-missao-yellow" data-filter="governador">
+                    Governador
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full font-bold border border-gray-700 text-gray-400 hover:border-missao-yellow hover:text-missao-yellow" data-filter="senador">
+                    Senador
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full font-bold border border-gray-700 text-gray-400 hover:border-missao-yellow hover:text-missao-yellow" data-filter="federal">
+                    Deputado Federal
+                </button>
+                <button class="filter-btn px-6 py-2 rounded-full font-bold border border-gray-700 text-gray-400 hover:border-missao-yellow hover:text-missao-yellow" data-filter="estadual">
+                    Deputado Estadual
+                </button>
+            </div>
+
+            <!-- Candidates Grid -->
+            <div id="candidatos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                
+                <!-- Candidato: Evando Alves -->
+                <div class="candidate-card candidate-item federal bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(252,189,39,0.2)]">
+                    <div class="h-64 bg-gradient-to-br from-missao-yellow/20 to-missao-yellow/5 flex items-center justify-center border-b border-gray-800">
+                        <svg class="w-24 h-24 text-missao-yellow opacity-40" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-missao-yellow/20 text-missao-yellow px-4 py-1 rounded-full text-sm font-bold">
+                                Deputado Federal
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-100 mb-1">Evando Alves</h3>
+                        <p class="text-gray-500 text-sm mb-4">Tocantins</p>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Candidato comprometido com o desenvolvimento econômico sustentável e a melhoria da qualidade de vida dos tocantinenses.
+                        </p>
+                        <a href="/html/candidatos/evando.html" class="inline-block bg-missao-yellow text-missao-dark font-bold py-2 px-6 rounded-lg hover:bg-opacity-90 transition-all duration-300">
+                            Saiba Mais
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Candidatos Vazios (para adicionar depois) -->
+                <div class="candidate-card candidate-item governador bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(252,189,39,0.2)] candidate-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center border-b border-gray-800">
+                        <svg class="w-16 h-16 text-gray-700 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4m0 4v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-gray-600 text-sm">Em breve</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-gray-800 text-gray-600 px-4 py-1 rounded-full text-sm font-bold">
+                                Governador
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-700 mb-4">Candidato em Breve</h3>
+                        <p class="text-gray-500 text-sm">
+                            Seu candidato para Governador será anunciado em breve.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="candidate-card candidate-item senador bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(252,189,39,0.2)] candidate-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center border-b border-gray-800">
+                        <svg class="w-16 h-16 text-gray-700 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4m0 4v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-gray-600 text-sm">Em breve</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-gray-800 text-gray-600 px-4 py-1 rounded-full text-sm font-bold">
+                                Senador
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-700 mb-4">Candidato em Breve</h3>
+                        <p class="text-gray-500 text-sm">
+                            Seu candidato para Senador será anunciado em breve.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="candidate-card candidate-item estadual bg-gray-900 border border-gray-800 rounded-lg overflow-hidden hover:shadow-[0_0_30px_rgba(252,189,39,0.2)] candidate-hidden">
+                    <div class="h-64 bg-gradient-to-br from-gray-800 to-gray-900 flex flex-col items-center justify-center border-b border-gray-800">
+                        <svg class="w-16 h-16 text-gray-700 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4m0 4v.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <p class="text-gray-600 text-sm">Em breve</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-gray-800 text-gray-600 px-4 py-1 rounded-full text-sm font-bold">
+                                Deputado Estadual
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-700 mb-4">Candidato em Breve</h3>
+                        <p class="text-gray-500 text-sm">
+                            Seus candidatos para Deputado Estadual serão anunciados em breve.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-missao-yellow/10 to-missao-yellow/5 border border-missao-yellow/30 rounded-lg p-12 text-center">
+                <h3 class="text-3xl font-bold mb-4 text-gray-100">Quer se Candidatar?</h3>
+                <p class="text-gray-400 mb-8 text-lg">Junte-se ao nosso movimento e contribua para a transformação do Tocantins</p>
+                <a href="/html/contatos.html" class="inline-block bg-missao-yellow text-missao-dark font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300">
+                    Fale Conosco
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar Header
+        fetch('/html/layout/header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o header');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (hamburger && mobileMenu) {
+                    hamburger.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+
+                    const mobileLinks = mobileMenu.querySelectorAll('a');
+                    mobileLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+
+        // Carregar Footer
+        fetch('/html/layout/footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o footer');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erro:', error));
+
+        // Filter Logic
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const candidateItems = document.querySelectorAll('.candidate-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filterValue = button.getAttribute('data-filter');
+
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                button.classList.remove('border-gray-700', 'text-gray-400');
+                button.classList.add('border-missao-yellow', 'text-missao-yellow');
+
+                // Filter candidates
+                candidateItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.classList.remove('candidate-hidden');
+                    } else {
+                        if (item.classList.contains(filterValue)) {
+                            item.classList.remove('candidate-hidden');
+                        } else {
+                            item.classList.add('candidate-hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

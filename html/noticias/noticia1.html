@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
+    <title>Partido anuncia novo programa de capacitação política - Notícias</title>
+
+    <meta name="description" content="O Partido Missão anuncia novo programa de capacitação política no Tocantins.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'missao-yellow': '#fcbd27', 'missao-dark': '#111111' },
+                    fontFamily: { 'afacad': ['Afacad', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-padding-top: 90px; }
+        body { background-color: #111111; color: #ffffff; }
+    </style>
+</head>
+<body class="font-afacad antialiased">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-32 pb-20 px-6">
+        <article class="container mx-auto max-w-3xl">
+            
+            <div class="mb-8">
+                <a href="/html/noticias.html" class="text-missao-yellow hover:underline text-sm font-medium">← Voltar para notícias</a>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight leading-tight mb-4">
+                Partido anuncia novo programa de capacitação política
+            </h1>
+
+            <div class="flex flex-wrap gap-4 mb-8 text-sm text-gray-400">
+                <span>10 de março de 2026</span>
+                <span>•</span>
+                <span>Tempo de leitura: 5 min</span>
+            </div>
+
+            <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-64 sm:h-96 rounded-xl mb-8 flex items-center justify-center">
+                <svg class="w-24 h-24 text-black opacity-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M5 13.5h14m-7-11v20m7-17h2a2 2 0 012 2v14a2 2 0 01-2 2H2a2 2 0 01-2-2V5a2 2 0 012-2h2"/>
+                </svg>
+            </div>
+
+            <div class="prose prose-invert max-w-none text-gray-300 leading-relaxed space-y-6 mb-12">
+                <p>
+                    O Partido Missão anunciou ontem, durante coletiva de imprensa na sede do diretório estadual, o lançamento de um ambicioso programa de capacitação política voltado para a formação de novos líderes no Tocantins. A iniciativa, denominada "Missão Política 2026", tem como objetivo preparar candidatos e militantes para as próximas eleições.
+                </p>
+
+                <h2 class="text-2xl font-bold text-white mt-8 mb-4">Objetivos do Programa</h2>
+
+                <p>
+                    O programa se divide em três eixos principais: formação teórica em ciência política, desenvolvimento de habilidades de comunicação e liderança, e estratégia de campanha moderna. Segundo o presidente estadual do partido, o projeto visa democratizar o acesso ao conhecimento político dentro da legenda.
+                </p>
+
+                <ul class="list-disc list-inside space-y-3">
+                    <li>Cursos de introdução à teoria política e história constitucional</li>
+                    <li>Workshops de comunicação política e mídia digital</li>
+                    <li>Mentoria com líderes experientes da legenda</li>
+                    <li>Simulações de campanhas eleitorais</li>
+                    <li>Disciplina em gestão de recursos financeiros</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-white mt-8 mb-4">Metodologia e Duração</h2>
+
+                <p>
+                    A capacitação será oferecida em dois formatos: presencial, nos principais municípios do Tocantins, e online, para maior alcance. Com duração de oito meses, o programa será concluído antes do período oficial de campanhas eleitorais, permitindo que os participantes coloquem em prática o aprendizado adquirido.
+                </p>
+
+                <p>
+                    "Estamos investindo na qualidade da nossa militância. Queremos que nossos candidatos, filiados e apoiadores tenham toda a base teórica e prática necessária para competir com firmeza nas eleições de 2026," afirmou o coordenador do programa em entrevista exclusiva.
+                </p>
+
+                <h2 class="text-2xl font-bold text-white mt-8 mb-4">Inscrições Abertas</h2>
+
+                <p>
+                    As inscrições para o programa "Missão Política 2026" estarão abertas até o final deste mês. Podem se inscrever filiados do partido, candidatos pré-selecionados e simpatizantes que queiram se aprofundar na política. A participação é gratuita para todos os inscritos.
+                </p>
+
+                <p>
+                    Para mais informações e realizar sua inscrição, visite o portal de educação política do Partido Missão ou entre em contato com o diretório estadual do Tocantins.
+                </p>
+            </div>
+
+            <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
+                <p class="text-sm text-gray-400">
+                    <strong>Nota da redação:</strong> Este artigo foi publicado como parte da cobertura jornalística dos anúncios e iniciativas do Partido Missão no Tocantins.
+                </p>
+            </div>
+
+        </article>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar Header
+        fetch('../layout/header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o header');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (hamburger && mobileMenu) {
+                    hamburger.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+
+                    const mobileLinks = mobileMenu.querySelectorAll('a');
+                    mobileLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+
+        // Carregar Footer
+        fetch('../layout/footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o footer');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erro:', error));
+    </script>
+</body>
+</html>

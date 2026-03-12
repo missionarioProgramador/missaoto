@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
+    <title>Contatos - Partido Missão Tocantins</title>
+
+    <meta name="description" content="Entre em contato com o Partido Missão Tocantins. Temos canais de atendimento via WhatsApp, Instagram e e-mail.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'missao-yellow': '#fcbd27', 'missao-dark': '#111111' },
+                    fontFamily: { 'afacad': ['Afacad', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-padding-top: 90px; }
+        body { background-color: #111111; color: #ffffff; }
+        .contact-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            border-color: #fcbd27;
+        }
+    </style>
+</head>
+<body class="font-afacad antialiased">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-40 pb-24 px-6">
+        <section class="container mx-auto max-w-6xl">
+            
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+                    Nossos <span class="text-missao-yellow">Canais</span>
+                </h1>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Escolha a melhor forma de falar conosco. Nossa equipe está pronta para atender você.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <a href="https://wa.me/5563984000000" target="_blank" class="contact-card flex flex-col items-center text-center p-8 bg-white/5 border border-white/10 rounded-2xl group">
+                    <div class="mb-6 p-4 rounded-full bg-green-500/10 text-green-500 group-hover:bg-green-500 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 2l-2.1 4.6Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                    <p class="text-gray-400 text-sm mb-4">Atendimento ágil para dúvidas e informações rápidas.</p>
+                    <span class="text-missao-yellow font-semibold">(63) 98400-0000</span>
+                </a>
+
+                <a href="https://instagram.com/partidomissao" target="_blank" class="contact-card flex flex-col items-center text-center p-8 bg-white/5 border border-white/10 rounded-2xl group">
+                    <div class="mb-6 p-4 rounded-full bg-pink-500/10 text-pink-500 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Instagram</h3>
+                    <p class="text-gray-400 text-sm mb-4">Acompanhe nossas ações e bastidores diariamente.</p>
+                    <span class="text-missao-yellow font-semibold">@partidomissao</span>
+                </a>
+
+                <a href="mailto:contato@partidomissao.org.br" class="contact-card flex flex-col items-center text-center p-8 bg-white/5 border border-white/10 rounded-2xl group">
+                    <div class="mb-6 p-4 rounded-full bg-blue-500/10 text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">E-mail</h3>
+                    <p class="text-gray-400 text-sm mb-4">Para solicitações oficiais e parcerias institucionais.</p>
+                    <span class="text-missao-yellow font-semibold text-sm">contato@partidomissao.org.br</span>
+                </a>
+
+            </div>
+
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Carregar Header
+        fetch('/html/layout/header.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o header');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobile-menu');
+
+                if (hamburger && mobileMenu) {
+                    hamburger.addEventListener('click', () => {
+                        mobileMenu.classList.toggle('hidden');
+                    });
+
+                    const mobileLinks = mobileMenu.querySelectorAll('a');
+                    mobileLinks.forEach(link => {
+                        link.addEventListener('click', () => {
+                            mobileMenu.classList.add('hidden');
+                        });
+                    });
+                }
+            })
+            .catch(error => console.error('Erro:', error));
+
+        // Carregar Footer
+        fetch('/html/layout/footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Erro ao carregar o footer');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Erro:', error));
+    </script>
+</body>
+</html>
