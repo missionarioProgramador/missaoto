@@ -1,0 +1,35 @@
+<section class="container mx-auto max-w-5xl mb-20 pt-16 lg:pt-24 relative">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div class="flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
+            <h1 class="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight leading-tight mb-6 text-gray-100 min-h-[1.2em]">
+                A <span class="text-missao-yellow">missão</span> de criar um 
+                <span id="typewriter" class="text-missao-yellow border-r-2 border-missao-yellow pr-1">Brasil</span> melhor
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-8 leading-relaxed">
+                Transformação política responsável para o Tocantins e para o Brasil
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="/html/candidatos.html" class="border-2 border-missao-yellow text-missao-yellow font-bold py-3 px-8 rounded-lg hover:bg-missao-yellow hover:text-missao-dark transition-all duration-300 text-center">
+                    Nossos Candidatos
+                </a>
+            </div>
+        </div>
+
+        <div class="hidden lg:flex items-center justify-center relative">
+            <img src="/img/logos/pintas_onca.png" alt="Padrão Missão" class="w-full h-auto max-w-xs object-contain">
+        </div>
+    </div>
+</section>
+
+<style>
+    #typewriter {
+        display: inline-block;
+        min-width: 20px;
+        animation: blink-cursor 0.8s step-end infinite;
+    }
+    @keyframes blink-cursor {
+        from, to { border-color: transparent }
+        50% { border-color: #fcbd27; }
+    }
+</style>

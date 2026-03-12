@@ -34,45 +34,8 @@
     <div id="header-placeholder"></div>
 
     <main class="pt-32 pb-20 px-6">
-        <!-- Hero Section -->
-        <section class="container mx-auto flex flex-col items-center justify-center text-center min-h-[50vh] mb-20">
-            <h1 class="text-4xl md:text-5xl lg:text-[50px] font-bold tracking-tight leading-none mb-6">
-                A <span class="text-missao-yellow">missão</span> de criar um Brasil melhor
-            </h1>
-            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-8">
-                Transformação política responsável para o Tocantins e para o Brasil
-            </p>
-        </section>
-
-        <!-- Quem Somos Section -->
-        <section class="container mx-auto max-w-5xl mb-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-100">
-                        <span class="text-missao-yellow">Quem</span> Somos
-                    </h2>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
-                        O Partido Missão Tocantins é um movimento político jovem, inovador e comprometido com a transformação responsável da realidade sociopolítica de nosso estado.
-                    </p>
-                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
-                        Estamos presentes em comunidades, escutando as necessidades reais dos tocantinenses e traduzindo-as em propostas concretas que promovam desenvolvimento, inclusão social e qualidade de vida.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="/html/quem_somos.html" class="bg-missao-yellow text-missao-dark font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 text-center">
-                            Saiba Mais
-                        </a>
-                        <a href="#call-to-action" class="border-2 border-missao-yellow text-missao-yellow font-bold py-3 px-8 rounded-lg hover:bg-missao-yellow hover:text-missao-dark transition-all duration-300 text-center">
-                            Participe
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-gradient-to-br from-missao-yellow/20 to-missao-yellow/5 rounded-lg h-80 flex items-center justify-center border border-missao-yellow/30">
-                    <svg class="w-32 h-32 text-missao-yellow opacity-40" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v2h8v-2zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-2a4 4 0 00-8 0v2a2 2 0 002 2h4a2 2 0 002-2z"></path>
-                    </svg>
-                </div>
-            </div>
-        </section>
+        <div id="hero-placeholder"></div>
+        <div id="quem-somos-placeholder"></div>
 
         <!-- Valores Section -->
         <section class="container mx-auto max-w-5xl mb-24">
@@ -126,106 +89,93 @@
                 </div>
             </div>
         </section>
-
-        <!-- Call to Action Section -->
-        <section id="call-to-action" class="container mx-auto max-w-5xl">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-100">
-                    Faça Parte da <span class="text-missao-yellow">Missão</span>
-                </h2>
-                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Juntos, podemos transformar o Tocantins
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Card Filie-se -->
-                <a href="https://www.filiacao.com" target="_blank" class="bg-gradient-to-br from-missao-yellow/20 to-missao-yellow/5 border border-missao-yellow/40 rounded-lg p-8 hover:border-missao-yellow transition-all duration-300 text-center group">
-                    <div class="w-16 h-16 bg-missao-yellow rounded-lg mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8 text-missao-dark" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-100 mb-3">Filie-se</h3>
-                    <p class="text-gray-400 mb-6">Torne-se um membro do Partido Missão e contribua para a transformação</p>
-                    <div class="text-missao-yellow font-bold group-hover:translate-x-1 transition-transform duration-300">
-                        Filiar agora →
-                    </div>
-                </a>
-
-                <!-- Card Candidatos -->
-                <a href="/html/candidatos.html" class="bg-gradient-to-br from-missao-yellow/20 to-missao-yellow/5 border border-missao-yellow/40 rounded-lg p-8 hover:border-missao-yellow transition-all duration-300 text-center group">
-                    <div class="w-16 h-16 bg-missao-yellow rounded-lg mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8 text-missao-dark" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v2h8v-2zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-2a4 4 0 00-8 0v2a2 2 0 002 2h4a2 2 0 002-2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-100 mb-3">Conheça Nossos Candidatos</h3>
-                    <p class="text-gray-400 mb-6">Saiba mais sobre os candidatos que representam nossa missão</p>
-                    <div class="text-missao-yellow font-bold group-hover:translate-x-1 transition-transform duration-300">
-                        Ver candidatos →
-                    </div>
-                </a>
-
-                <!-- Card Contato -->
-                <a href="/html/contatos.html" class="bg-gradient-to-br from-missao-yellow/20 to-missao-yellow/5 border border-missao-yellow/40 rounded-lg p-8 hover:border-missao-yellow transition-all duration-300 text-center group">
-                    <div class="w-16 h-16 bg-missao-yellow rounded-lg mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <svg class="w-8 h-8 text-missao-dark" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-100 mb-3">Entre em Contato</h3>
-                    <p class="text-gray-400 mb-6">Dúvidas? Fale conosco por WhatsApp, Instagram ou e-mail</p>
-                    <div class="text-missao-yellow font-bold group-hover:translate-x-1 transition-transform duration-300">
-                        Enviar mensagem →
-                    </div>
-                </a>
-            </div>
-        </section>
     </main>
 
     <div id="footer-placeholder"></div>
 
     <script>
-        // 1. Carregar o Header
-        fetch('html/layout/header.html')
-            .then(response => {
-                if (!response.ok) throw new Error('Erro ao carregar o header');
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
+        const loadComponent = (id, path) => {
+            fetch(path)
+                .then(response => {
+                    if (!response.ok) throw new Error(`Erro ao carregar ${path}`);
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                    if(id === 'header-placeholder') initMobileMenu();
+                    if(id === 'hero-placeholder') initTypewriter();
+                })
+                .catch(error => console.error('Erro:', error));
+        };
+
+        const initMobileMenu = () => {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        };
+
+        const initTypewriter = () => {
+            const typewriterEl = document.getElementById('typewriter');
+            
+            if (!typewriterEl) {
+                console.error('Elemento typewriter não encontrado');
+                return;
+            }
+            
+            const words = ['Brasil', 'Tocantins'];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentWord = words[wordIndex];
                 
-                // Script do hambúrguer (funciona após o header carregar)
-                const hamburger = document.getElementById('hamburger');
-                const mobileMenu = document.getElementById('mobile-menu');
-
-                if (hamburger && mobileMenu) {
-                    hamburger.addEventListener('click', () => {
-                        mobileMenu.classList.toggle('hidden');
-                    });
-
-                    const mobileLinks = mobileMenu.querySelectorAll('a');
-                    mobileLinks.forEach(link => {
-                        link.addEventListener('click', () => {
-                            mobileMenu.classList.add('hidden');
-                        });
-                    });
+                if (isDeleting) {
+                    charIndex--;
+                } else {
+                    charIndex++;
                 }
-            })
-            .catch(error => console.error('Erro:', error));
 
-        // 2. Carregar o Footer
-        fetch('html/layout/footer.html')
-            .then(response => {
-                if (!response.ok) throw new Error('Erro ao carregar o footer');
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Erro:', error));
+                typewriterEl.textContent = currentWord.slice(0, charIndex);
+
+                let delay = 150;
+
+                if (isDeleting) {
+                    delay = 100;
+                }
+
+                if (charIndex === currentWord.length && !isDeleting) {
+                    delay = 2500;
+                    isDeleting = true;
+                } else if (charIndex === 0 && isDeleting) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    delay = 500;
+                }
+
+                setTimeout(type, delay);
+            }
+
+            setTimeout(type, 500);
+        };
+
+        // Carregar componentes
+        loadComponent('header-placeholder', 'html/layout/header.html');
+        loadComponent('footer-placeholder', 'html/layout/footer.html');
+        loadComponent('hero-placeholder', 'html/hero.html');
+        loadComponent('quem-somos-placeholder', 'html/quem_somos_section.html');
     </script>
 </body>
 </html>
