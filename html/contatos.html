@@ -1,15 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
-    <title>Contatos - Partido Missão Tocantins</title>
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo_onca.svg">
+    <title>Contatos - Partido MissÃ£o Tocantins</title>
 
-    <meta name="description" content="Entre em contato com o Partido Missão Tocantins. Temos canais de atendimento via WhatsApp, Instagram e e-mail.">
-    <meta name="robots" content="index, follow">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Entre em contato com o Partido MissÃ£o Tocantins. Temos canais de atendimento via WhatsApp, Instagram e e-mail.">
+    
+    <base href="/missaoto/">
+    <script>
+        (function () {
+            const baseEl = document.querySelector('base');
+            const inSubPath = window.location.pathname.includes('/missaoto/');
+            baseEl.setAttribute('href', inSubPath ? '/missaoto/' : '/');
+        })();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -47,7 +54,7 @@
                     Nossos <span class="text-missao-yellow">Canais</span>
                 </h1>
                 <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    Escolha a melhor forma de falar conosco. Nossa equipe está pronta para atender você.
+                    Escolha a melhor forma de falar conosco. Nossa equipe estÃ¡ pronta para atender vocÃª.
                 </p>
             </div>
 
@@ -58,7 +65,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-10.6 8.38 8.38 0 0 1 3.8.9L22 2l-2.1 4.6Z"/></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
-                    <p class="text-gray-400 text-sm mb-4">Atendimento ágil para dúvidas e informações rápidas.</p>
+                    <p class="text-gray-400 text-sm mb-4">Atendimento Ã¡gil para dÃºvidas e informaÃ§Ãµes rÃ¡pidas.</p>
                     <span class="text-missao-yellow font-semibold">(63) 98400-0000</span>
                 </a>
 
@@ -67,7 +74,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Instagram</h3>
-                    <p class="text-gray-400 text-sm mb-4">Acompanhe nossas ações e bastidores diariamente.</p>
+                    <p class="text-gray-400 text-sm mb-4">Acompanhe nossas aÃ§Ãµes e bastidores diariamente.</p>
                     <span class="text-missao-yellow font-semibold">@partidomissao</span>
                 </a>
 
@@ -76,7 +83,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">E-mail</h3>
-                    <p class="text-gray-400 text-sm mb-4">Para solicitações oficiais e parcerias institucionais.</p>
+                    <p class="text-gray-400 text-sm mb-4">Para solicitaÃ§Ãµes oficiais e parcerias institucionais.</p>
                     <span class="text-missao-yellow font-semibold text-sm">contato@partidomissao.org.br</span>
                 </a>
 
@@ -89,7 +96,7 @@
 
     <script>
         // Carregar Header
-        fetch('/html/layout/header.html')
+        fetch('html/layout/header.html')
             .then(response => {
                 if (!response.ok) throw new Error('Erro ao carregar o header');
                 return response.text();
@@ -116,7 +123,7 @@
             .catch(error => console.error('Erro:', error));
 
         // Carregar Footer
-        fetch('/html/layout/footer.html')
+        fetch('html/layout/footer.html')
             .then(response => {
                 if (!response.ok) throw new Error('Erro ao carregar o footer');
                 return response.text();
@@ -128,3 +135,5 @@
     </script>
 </body>
 </html>
+
+

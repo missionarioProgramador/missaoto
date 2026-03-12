@@ -1,16 +1,23 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
-    <title>Evando Alves - Deputado Federal | Partido Missão Tocantins</title>
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo_onca.svg">
+    <title>Evando Alves - Deputado Federal | Partido MissÃ£o Tocantins</title>
 
-    <meta name="description" content="Conheça Evando Alves, candidato a Deputado Federal pelo Partido Missão Tocantins. Comprometido com o desenvolvimento sustentável e qualidade de vida.">
-    <meta name="keywords" content="Evando Alves, Deputado Federal, Tocantins, eleições 2026">
-    <meta name="robots" content="index, follow">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="ConheÃ§a Evando Alves, candidato a Deputado Federal pelo Partido MissÃ£o Tocantins. Comprometido com o desenvolvimento sustentÃ¡vel e qualidade de vida.">
+    <meta name="keywords" content="Evando Alves, Deputado Federal, Tocantins, eleiÃ§Ãµes 2026">
+    
+    <base href="/missaoto/">
+    <script>
+        (function () {
+            const baseEl = document.querySelector('base');
+            const inSubPath = window.location.pathname.includes('/missaoto/');
+            baseEl.setAttribute('href', inSubPath ? '/missaoto/' : '/');
+        })();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,7 +43,7 @@
     <main class="pt-40 pb-24 px-6">
         <section class="container mx-auto max-w-5xl">
             
-            <a href="/html/candidatos.html" class="inline-flex items-center gap-2 text-missao-yellow hover:gap-3 transition-all mb-12 font-bold">
+            <a href="html/candidatos.html" class="inline-flex items-center gap-2 text-missao-yellow hover:gap-3 transition-all mb-12 font-bold">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
@@ -55,7 +62,7 @@
                         <p class="text-gray-400 text-lg">Tocantins</p>
                     </div>
                     <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                        Candidato comprometido com a transformação responsável do Tocantins e o desenvolvimento sustentável que beneficia o povo tocantinense.
+                        Candidato comprometido com a transformaÃ§Ã£o responsÃ¡vel do Tocantins e o desenvolvimento sustentÃ¡vel que beneficia o povo tocantinense.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4">
@@ -75,7 +82,7 @@
                 </div>
 
                 <div class="bg-gradient-to-br from-missao-yellow/20 to-missao-yellow/5 rounded-lg h-96 flex items-center justify-center border border-missao-yellow/30">
-                    <img src="/img/candidatos/image.png" alt="Evando Alves" class="w-full h-full object-cover rounded-lg">
+                    <img src="img/candidatos/image.png" alt="Evando Alves" class="w-full h-full object-cover rounded-lg">
                 </div>
             </div>
 
@@ -92,9 +99,9 @@
                                 <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">Desenvolvimento Econômico</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">Desenvolvimento EconÃ´mico</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Incentivar a diversificação econômica do Tocantins, com foco em agronegócio sustentável, turismo responsável e indústrias limpas que geram empregos de qualidade.
+                            Incentivar a diversificaÃ§Ã£o econÃ´mica do Tocantins, com foco em agronegÃ³cio sustentÃ¡vel, turismo responsÃ¡vel e indÃºstrias limpas que geram empregos de qualidade.
                         </p>
                     </div>
 
@@ -104,9 +111,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">Educação de Qualidade</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">EducaÃ§Ã£o de Qualidade</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Fortalecer a educação pública em todos os níveis, investindo em infraestrutura escolar, formação de professores e políticas de inclusão educacional para todos.
+                            Fortalecer a educaÃ§Ã£o pÃºblica em todos os nÃ­veis, investindo em infraestrutura escolar, formaÃ§Ã£o de professores e polÃ­ticas de inclusÃ£o educacional para todos.
                         </p>
                     </div>
 
@@ -116,9 +123,9 @@
                                 <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">Saúde para Todos</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">SaÃºde para Todos</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Melhorar o acesso à saúde de qualidade, especialmente nas regiões do interior, expandindo atendimento básico e investindo em prevenção e saúde comunitária.
+                            Melhorar o acesso Ã  saÃºde de qualidade, especialmente nas regiÃµes do interior, expandindo atendimento bÃ¡sico e investindo em prevenÃ§Ã£o e saÃºde comunitÃ¡ria.
                         </p>
                     </div>
 
@@ -130,7 +137,7 @@
                         </div>
                         <h3 class="text-2xl font-bold mb-4 text-gray-100 group-hover:text-missao-yellow transition-colors duration-300">Sustentabilidade Ambiental</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Proteger e restaurar o meio ambiente tocantinense, promovendo práticas sustentáveis e equilibrando desenvolvimento econômico com conservação ambiental.
+                            Proteger e restaurar o meio ambiente tocantinense, promovendo prÃ¡ticas sustentÃ¡veis e equilibrando desenvolvimento econÃ´mico com conservaÃ§Ã£o ambiental.
                         </p>
                     </div>
 
@@ -139,15 +146,15 @@
 
             <div class="bg-gray-900 border border-gray-800 rounded-lg p-12 mb-20 hover:border-missao-yellow/50 transition-colors duration-300">
                 <h2 class="text-3xl font-bold mb-8 text-gray-100">
-                    <span class="text-missao-yellow">Trajetória</span> Profissional
+                    <span class="text-missao-yellow">TrajetÃ³ria</span> Profissional
                 </h2>
                 
                 <div class="space-y-6">
                     <div class="flex gap-4">
                         <div class="w-4 h-4 rounded-full bg-missao-yellow mt-2 flex-shrink-0"></div>
                         <div>
-                            <h4 class="text-xl font-bold text-missao-yellow mb-1">Experiência em Gestão Pública</h4>
-                            <p class="text-gray-400">Atuação consistente no setor público com foco em eficiência administrativa e resultados para a população.</p>
+                            <h4 class="text-xl font-bold text-missao-yellow mb-1">ExperiÃªncia em GestÃ£o PÃºblica</h4>
+                            <p class="text-gray-400">AtuaÃ§Ã£o consistente no setor pÃºblico com foco em eficiÃªncia administrativa e resultados para a populaÃ§Ã£o.</p>
                         </div>
                     </div>
 
@@ -155,15 +162,15 @@
                         <div class="w-4 h-4 rounded-full bg-missao-yellow mt-2 flex-shrink-0"></div>
                         <div>
                             <h4 class="text-xl font-bold text-missao-yellow mb-1">Comprometimento com Comunidades</h4>
-                            <p class="text-gray-400">Trabalho constante junto às comunidades do Tocantins, escutando demandas e buscando soluções práticas.</p>
+                            <p class="text-gray-400">Trabalho constante junto Ã s comunidades do Tocantins, escutando demandas e buscando soluÃ§Ãµes prÃ¡ticas.</p>
                         </div>
                     </div>
 
                     <div class="flex gap-4">
                         <div class="w-4 h-4 rounded-full bg-missao-yellow mt-2 flex-shrink-0"></div>
                         <div>
-                            <h4 class="text-xl font-bold text-missao-yellow mb-1">Representação Política Responsável</h4>
-                            <p class="text-gray-400">Candidato selecionado para representar os valores e objetivos do Partido Missão no Congresso Nacional.</p>
+                            <h4 class="text-xl font-bold text-missao-yellow mb-1">RepresentaÃ§Ã£o PolÃ­tica ResponsÃ¡vel</h4>
+                            <p class="text-gray-400">Candidato selecionado para representar os valores e objetivos do Partido MissÃ£o no Congresso Nacional.</p>
                         </div>
                     </div>
                 </div>
@@ -171,12 +178,12 @@
 
             <div class="bg-gradient-to-r from-missao-yellow/10 to-missao-yellow/5 border border-missao-yellow/30 rounded-lg p-12 text-center hover:border-missao-yellow/50 hover:shadow-[0_0_30px_rgba(252,189,39,0.15)] transition-all duration-300">
                 <h3 class="text-3xl font-bold mb-4 text-missao-yellow">Apoie Evando Alves</h3>
-                <p class="text-gray-300 mb-8 text-lg">Juntos, pela transformação responsável do Tocantins</p>
+                <p class="text-gray-300 mb-8 text-lg">Juntos, pela transformaÃ§Ã£o responsÃ¡vel do Tocantins</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="https://www.filiacao.com" target="_blank" class="bg-missao-yellow text-missao-dark font-bold py-3 px-8 rounded-lg hover:bg-opacity-90 transition-all duration-300 text-center">
                         Filie-se
                     </a>
-                    <a href="/html/contatos.html" class="border-2 border-missao-yellow text-missao-yellow font-bold py-3 px-8 rounded-lg hover:bg-missao-yellow hover:text-missao-dark transition-all duration-300">
+                    <a href="html/contatos.html" class="border-2 border-missao-yellow text-missao-yellow font-bold py-3 px-8 rounded-lg hover:bg-missao-yellow hover:text-missao-dark transition-all duration-300">
                         Entre em Contato
                     </a>
                 </div>
@@ -189,7 +196,7 @@
 
     <script>
         // Carregar Header
-        fetch('/html/layout/header.html')
+        fetch('html/layout/header.html')
             .then(response => {
                 if (!response.ok) throw new Error('Erro ao carregar o header');
                 return response.text();
@@ -216,7 +223,7 @@
             .catch(error => console.error('Erro:', error));
 
         // Carregar Footer
-        fetch('/html/layout/footer.html')
+        fetch('html/layout/footer.html')
             .then(response => {
                 if (!response.ok) throw new Error('Erro ao carregar o footer');
                 return response.text();
@@ -228,3 +235,4 @@
     </script>
 </body>
 </html>
+

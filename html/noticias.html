@@ -1,15 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
-    <title>Notícias - Partido Missão Tocantins</title>
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo_onca.svg">
+    <title>NotÃ­cias - Partido MissÃ£o Tocantins</title>
 
-    <meta name="description" content="Acompanhe as últimas notícias e atualizações do Partido Missão no Tocantins.">
-    <meta name="robots" content="index, follow">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Acompanhe as Ãºltimas notÃ­cias e atualizaÃ§Ãµes do Partido MissÃ£o no Tocantins.">
+    
+    <base href="/missaoto/">
+    <script>
+        (function () {
+            const baseEl = document.querySelector('base');
+            const inSubPath = window.location.pathname.includes('/missaoto/');
+            baseEl.setAttribute('href', inSubPath ? '/missaoto/' : '/');
+        })();
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,33 +43,33 @@
         <section class="container mx-auto">
             
             <h1 class="text-4xl sm:text-5xl font-bold tracking-tight leading-none mb-8">
-                <span class="text-missao-yellow">Notícias</span>
+                <span class="text-missao-yellow">NotÃ­cias</span>
             </h1>
 
             <div class="mb-12">
-                <input type="text" id="searchInput" placeholder="Buscar notícias..." 
+                <input type="text" id="searchInput" placeholder="Buscar notÃ­cias..." 
                     class="w-full px-6 py-3 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-missao-yellow transition-all">
             </div>
 
             <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <a href="noticias/noticia1.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
+                <a href="html/noticias/noticia1.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
                     <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-48 flex items-center justify-center">
                         <svg class="w-16 h-16 text-black opacity-20" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M5 13.5h14m-7-11v20m7-17h2a2 2 0 012 2v14a2 2 0 01-2 2H2a2 2 0 01-2-2V5a2 2 0 012-2h2"/>
                         </svg>
                     </div>
                     <div class="p-6">
-                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Partido anuncia novo programa de capacitação política</h2>
-                        <p class="text-gray-400 text-sm mb-4">Iniciativa visa preparar novos líderes para as próximas eleições no Tocantins.</p>
+                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Partido anuncia novo programa de capacitaÃ§Ã£o polÃ­tica</h2>
+                        <p class="text-gray-400 text-sm mb-4">Iniciativa visa preparar novos lÃ­deres para as prÃ³ximas eleiÃ§Ãµes no Tocantins.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-500">10 de março de 2026</span>
-                            <span class="text-missao-yellow text-sm font-medium">Leia mais →</span>
+                            <span class="text-xs text-gray-500">10 de marÃ§o de 2026</span>
+                            <span class="text-missao-yellow text-sm font-medium">Leia mais â†’</span>
                         </div>
                     </div>
                 </a>
 
-                <a href="noticias/noticia2.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
+                <a href="html/noticias/noticia2.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
                     <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-48 flex items-center justify-center">
                         <svg class="w-16 h-16 text-black opacity-20" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17 20h5v-2a3 3 0 00-5.856-1.488M15 6a3 3 0 11-6 0 3 3 0 016 0zM16 12a4 4 0 01-8 0 4 4 0 018 0z"/>
@@ -70,26 +77,26 @@
                     </div>
                     <div class="p-6">
                         <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Encontro com candidatos da campanha 2026</h2>
-                        <p class="text-gray-400 text-sm mb-4">Missão reúne candidatos para discutir estratégias e compromissos com o estado.</p>
+                        <p class="text-gray-400 text-sm mb-4">MissÃ£o reÃºne candidatos para discutir estratÃ©gias e compromissos com o estado.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-500">8 de março de 2026</span>
-                            <span class="text-missao-yellow text-sm font-medium">Leia mais →</span>
+                            <span class="text-xs text-gray-500">8 de marÃ§o de 2026</span>
+                            <span class="text-missao-yellow text-sm font-medium">Leia mais â†’</span>
                         </div>
                     </div>
                 </a>
 
-                <a href="noticias/noticia3.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
+                <a href="html/noticias/noticia3.html" class="group bg-gray-800/50 rounded-xl overflow-hidden hover:bg-gray-800 transition-colors">
                     <div class="bg-gradient-to-r from-missao-yellow to-yellow-600 h-48 flex items-center justify-center">
                         <svg class="w-16 h-16 text-black opacity-20" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
                     <div class="p-6">
-                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Índice de aprovação do Missão cresce no Tocantins</h2>
-                        <p class="text-gray-400 text-sm mb-4">Pesquisa aponta aumento de 15% na aprovação da legenda entre eleitores tocantinenses.</p>
+                        <h2 class="text-xl font-bold mb-2 group-hover:text-missao-yellow transition-colors">Ãndice de aprovaÃ§Ã£o do MissÃ£o cresce no Tocantins</h2>
+                        <p class="text-gray-400 text-sm mb-4">Pesquisa aponta aumento de 15% na aprovaÃ§Ã£o da legenda entre eleitores tocantinenses.</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-xs text-gray-500">5 de março de 2026</span>
-                            <span class="text-missao-yellow text-sm font-medium">Leia mais →</span>
+                            <span class="text-xs text-gray-500">5 de marÃ§o de 2026</span>
+                            <span class="text-missao-yellow text-sm font-medium">Leia mais â†’</span>
                         </div>
                     </div>
                 </a>
@@ -102,7 +109,7 @@
 
     <script>
         // Carregar Header
-        fetch('layout/header.html')
+        fetch('html/layout/header.html')
             .then(response => {
                 if (!response.ok) throw new Error('Erro ao carregar o header');
                 return response.text();
@@ -129,7 +136,7 @@
             .catch(error => console.error('Erro:', error));
 
         // Carregar Footer
-        fetch('layout/footer.html')
+        fetch('html/layout/footer.html')
             .then(response => {
                 if (!response.ok) throw new Error('Erro ao carregar o footer');
                 return response.text();
@@ -139,7 +146,7 @@
             })
             .catch(error => console.error('Erro:', error));
 
-        // Busca de notícias
+        // Busca de notÃ­cias
         const searchInput = document.getElementById('searchInput');
         const newsContainer = document.getElementById('news-container');
         const newsCards = newsContainer.querySelectorAll('a');
@@ -161,3 +168,5 @@
     </script>
 </body>
 </html>
+
+

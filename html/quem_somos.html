@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo_onca.svg">
+    <title>Quem Somos - Partido Missao Tocantins</title>
+
+    <meta name="description" content="Conheca a missao e os valores do Partido Missao Tocantins.">
+    <meta name="robots" content="index, follow">
+    <base href="/missaoto/">
+    <script>
+        (function () {
+            const baseEl = document.querySelector('base');
+            const inSubPath = window.location.pathname.includes('/missaoto/');
+            baseEl.setAttribute('href', inSubPath ? '/missaoto/' : '/');
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'missao-yellow': '#fcbd27', 'missao-dark': '#111111' },
+                    fontFamily: { 'afacad': ['Afacad', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-padding-top: 90px; }
+        body { background-color: #111111; color: #ffffff; }
+    </style>
+</head>
+<body class="font-afacad antialiased">
+
+    <div id="header-placeholder"></div>
+
+    <main class="pt-32 pb-20 px-6">
+        <div id="quem-somos-placeholder"></div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        const loadComponent = (id, path) => {
+            fetch(path)
+                .then((response) => {
+                    if (!response.ok) throw new Error(`Erro ao carregar ${path}`);
+                    return response.text();
+                })
+                .then((data) => {
+                    document.getElementById(id).innerHTML = data;
+                    if (id === 'header-placeholder') initMobileMenu();
+                })
+                .catch((error) => console.error('Erro:', error));
+        };
+
+        const initMobileMenu = () => {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (hamburger && mobileMenu) {
+                hamburger.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach((link) => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        };
+
+        loadComponent('header-placeholder', 'html/layout/header.html');
+        loadComponent('footer-placeholder', 'html/layout/footer.html');
+        loadComponent('quem-somos-placeholder', 'html/quem_somos_section.html');
+    </script>
+</body>
+</html>
+

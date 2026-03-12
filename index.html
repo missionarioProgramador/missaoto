@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/img/logos/logo_onca.svg">
+    <link rel="icon" type="image/svg+xml" href="img/logos/logo_onca.svg">
     <title>Partido Missão Tocantins</title>
 
     <meta name="description" content="Conheça o diretório estadual do Partido Missão no Tocantins. Acompanhe nossos candidatos a Governador, Deputado Federal e Deputado Estadual para as próximas eleições.">
     <meta name="keywords" content="Partido Missão Tocantins, candidatos deputado federal tocantins, candidatos deputado estadual tocantins, candidato governo tocantins 2026, eleições tocantins, partido missão">
     <meta name="robots" content="index, follow">
+    <base href="/missaoto/">
+    <script>
+        (function () {
+            const baseEl = document.querySelector('base');
+            const inSubPath = window.location.pathname.includes('/missaoto/');
+            baseEl.setAttribute('href', inSubPath ? '/missaoto/' : '/');
+        })();
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,10 +102,15 @@
     <div id="footer-placeholder"></div>
 
     <script>
+        const APP_ROOT = window.location.pathname.includes('/missaoto/') ? '/missaoto/' : '/';
+
         const loadComponent = (id, path) => {
-            fetch(path)
+            const normalizedPath = path.replace(/^\/+/, '');
+            const resolvedPath = `${APP_ROOT}${normalizedPath}`;
+
+            fetch(resolvedPath)
                 .then(response => {
-                    if (!response.ok) throw new Error(`Erro ao carregar ${path}`);
+                    if (!response.ok) throw new Error(`Erro ao carregar ${resolvedPath}`);
                     return response.text();
                 })
                 .then(data => {
